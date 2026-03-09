@@ -3,7 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <title>Portfolio</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
 
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
 <style>
 
 body{
@@ -16,7 +20,7 @@ body{
 }
 
 .left{
-    width:35%;
+    width:20%;
     background:#f5f5f5;
     text-align:center;
     padding:40px;
@@ -44,7 +48,170 @@ a{
     text-decoration:none;
     margin:5px;
 }
+.text{
+    text-align: justify;
+    hyphens: auto;
+}
+.skills-section{
+    margin-top:60px;
+    text-align:center;
+}
 
+.skills-title{
+    font-size:32px;
+    margin-bottom:40px;
+}
+
+/* Layout grid */
+
+.skills-container{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+}
+
+/* Card */
+
+.skill-card{
+    background:white;
+    border-radius:12px;
+    padding:25px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+/* Hover effect */
+
+.skill-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* Title */
+
+.skill-card h3{
+    color:#2c6ed5;
+    margin-bottom:15px;
+}
+
+/* Skills */
+
+.skill-list span{
+    display:inline-block;
+    background:#f2f2f2;
+    padding:6px 12px;
+    margin:5px;
+    border-radius:20px;
+    font-size:14px;
+    transition:0.3s;
+}
+
+/* Tag hover */
+
+.skill-list span:hover{
+    background:#2c6ed5;
+    color:white;
+    transform:scale(1.1);
+}
+.projects-section{
+margin-top:80px;
+text-align:center;
+}
+
+.projects-title{
+font-size:34px;
+margin-bottom:40px;
+}
+
+.slider{
+position:relative;
+max-width:1000px;
+margin:auto;
+overflow:hidden;
+}
+
+.slides{
+display:flex;
+transition:transform 0.5s ease;
+}
+
+.slide{
+min-width:100%;
+padding:20px;
+box-sizing:border-box;
+}
+
+.project-card{
+display:flex;
+gap:30px;
+background:white;
+border-radius:12px;
+box-shadow:0 8px 25px rgba(0,0,0,0.1);
+padding:25px;
+align-items:center;
+transition:0.3s;
+}
+
+.project-card:hover{
+transform:translateY(-8px);
+box-shadow:0 12px 35px rgba(0,0,0,0.2);
+}
+
+.project-image img{
+width:350px;
+border-radius:10px;
+}
+
+.project-content{
+text-align:left;
+}
+
+.project-content h3{
+color:#2c6ed5;
+margin-bottom:10px;
+}
+
+.project-content ul{
+margin-top:10px;
+}
+
+.project-content li{
+margin-bottom:5px;
+}
+
+.tech{
+margin-top:10px;
+font-weight:bold;
+color:#555;
+}
+
+/* Navigation */
+
+.nav{
+position:absolute;
+top:50%;
+transform:translateY(-50%);
+background:#2c6ed5;
+color:white;
+border:none;
+font-size:24px;
+padding:10px 15px;
+cursor:pointer;
+border-radius:6px;
+z-index:10;
+}
+
+.prev{
+left:10px;
+}
+
+.next{
+right:10px;
+}
+
+.nav:hover{
+background:#1f4da5;
+}
 </style>
 </head>
 
@@ -57,50 +224,225 @@ a{
 <h1>Nhi Pham</h1>
 
 <img src="avatar.jpg">
-
+<div>
 <p>
-<a href="#">Resume</a> |
-<a href="#">LinkedIn</a> |
-<a href="#">GitHub</a>
+<a href="PhamYenNhi.pdf">Resume</a> |
+<a href="mailto:phamnhi839292@gmail.com">Gmail</a>|
+<a href="https://github.com/nnhiyen">GitHub</a>
 </p>
-
-<p>
-Sinh viên CNTT. Quan tâm đến
-Machine Learning, Web Development
-và Data Analysis.
-</p>
-
 </div>
-
+</div>
 <div class="right">
+<div class="text">
+    <h1>
+        ABOUT ME
+    </h1>
+    <p>
+        I am an Information Technology student with an interest in software development and problem solving. I enjoy building applications and learning new technologies. 
+    </p>
+    <p>
+        My current focus is on Java, web development, and algorithms.
+    </p>
+</div>
 
-<h1>Portfolio</h1>
+<h1>MY SKILL</h1>
+<section class="skills-section">
 
-<div class="project">
-<h3>Quản Lý Tour Du Lịch</h3>
+<div class="skills-container">
+
+<div class="skill-card" data-aos="fade-up">
+<h3>Frontend</h3>
+
+<div class="skill-list">
+
+<span><i class="devicon-html5-plain colored"></i> HTML</span>
+
+<span><i class="devicon-css3-plain colored"></i> CSS</span>
+
+<span><i class="devicon-javascript-plain colored"></i> JavaScript</span>
+
+</div>
+</div>
+
+
+<div class="skill-card" data-aos="fade-up" data-aos-delay="100">
+<h3>Backend</h3>
+
+<div class="skill-list">
+
+<span><i class="devicon-java-plain colored"></i> Java</span>
+
+<span><i class="devicon-php-plain colored"></i> PHP</span>
+
+<span><i class="devicon-python-plain colored"></i> Python</span>
+
+</div>
+</div>
+
+
+<div class="skill-card" data-aos="fade-up" data-aos-delay="300">
+<h3>Tools & Database</h3>
+
+<div class="skill-list">
+
+<span><i class="devicon-mysql-plain colored"></i> MySQL</span>
+
+<span><i class="devicon-postgresql-plain colored"></i> PostgreSQL</span>
+
+<span><i class="devicon-vscode-plain colored"></i> VS Code</span>
+
+<span><i class="devicon-intellij-plain colored"></i> IntelliJ</span>
+
+</div>
+</div>
+
+</div>
+
+</section>
+
+<section class="projects-section">
+
+<h2 class="projects-title">Projects</h2>
+
+<div class="slider">
+
+<button class="nav prev">&#10094;</button>
+
+<div class="slides">
+
+<!-- PROJECT 1 -->
+
+<div class="slide">
+
+<div class="project-card">
+
+<div class="project-image">
+<img src="busmap.png" alt="Busmap Admin">
+</div>
+
+<div class="project-content">
+
+<h3>Busmap Admin System</h3>
 
 <p>
-Ứng dụng Java quản lý tour, khách hàng và dịch vụ.
+A bus management and tracking system developed with 
+Next.js, Node.js, and Python. The system allows administrators 
+to manage drivers, schedules, routes, and track bus locations 
+in real time.
 </p>
 
-<a href="#">GitHub</a>
+<ul>
+<li>Real-time bus tracking using Socket.IO</li>
+<li>Route clustering for 500+ addresses using Python</li>
+<li>Interactive Google Maps integration</li>
+<li>Driver assignment and schedule management</li>
+</ul>
+
+<p class="tech">
+Tech: Next.js • Node.js • Python • MySQL • Socket.IO • Google Maps API
+</p>
+
 </div>
 
+</div>
 
-<div class="project">
-<h3>Graph Coloring Algorithm</h3>
+</div>
+
+<!-- PROJECT 2 -->
+
+<div class="slide">
+
+<div class="project-card">
+
+<div class="project-image">
+<alt="Tour Management System">
+</div>
+
+<div class="project-content">
+
+<h3>Tour Management System</h3>
 
 <p>
-Cài đặt thuật toán Welch-Powell và DSATUR
-để tô màu đồ thị.
+A Java desktop application designed to manage travel tours, 
+customers, and services for travel agencies.
 </p>
 
-<a href="#">GitHub</a>
-</div>
+<ul>
+<li>Manage tour information (create, edit, delete)</li>
+<li>Customer management</li>
+<li>Service management for tours</li>
+<li>Tour booking and reservation management</li>
+</ul>
+
+<p class="tech">
+Tech: Java • Java Swing • MySQL
+</p>
 
 </div>
 
 </div>
 
+</div>
+
+</div>
+
+<button class="nav next">&#10095;</button>
+
+</div>
+
+</section>
+</div>
+
+
+
+<!-- AOS Script -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+AOS.init({
+duration:1000,
+once:true
+});
+</script>
+<script>
+
+document.addEventListener("DOMContentLoaded", function(){
+
+const slides = document.querySelector(".slides");
+const slide = document.querySelectorAll(".slide");
+
+const nextBtn = document.querySelector(".next");
+const prevBtn = document.querySelector(".prev");
+
+let index = 0;
+
+nextBtn.addEventListener("click", () => {
+
+    index++;
+
+    if(index >= slide.length){
+        index = 0;
+    }
+
+    slides.style.transform = `translateX(-${index * 100}%)`;
+
+});
+
+prevBtn.addEventListener("click", () => {
+
+    index--;
+
+    if(index < 0){
+        index = slide.length - 1;
+    }
+
+    slides.style.transform = `translateX(-${index * 100}%)`;
+
+});
+
+});
+
+</script>
 </body>
+
 </html>
