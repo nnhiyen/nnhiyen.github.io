@@ -2,76 +2,47 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Nhi Pham Portfolio</title>
+<title>Portfolio</title>
 
 <style>
 
 body{
     font-family: Arial;
-    background:#f4f6f9;
-    margin:40px;
+    margin:0;
 }
 
 .container{
     display:flex;
-    max-width:1100px;
-    margin:auto;
-    background:white;
-    border-radius:10px;
-    padding:30px;
 }
-
-/* Cột trái */
 
 .left{
     width:35%;
+    background:#f5f5f5;
     text-align:center;
-    border-right:1px solid #ddd;
-    padding-right:25px;
+    padding:40px;
 }
 
-.profile-img{
-    width:180px;
+.left img{
+    width:200px;
     border-radius:50%;
-    margin-bottom:15px;
 }
-
-.name{
-    font-size:28px;
-    font-weight:bold;
-}
-
-.links a{
-    display:block;
-    margin:8px;
-    text-decoration:none;
-    color:#0077cc;
-}
-
-/* Cột phải */
 
 .right{
     width:65%;
-    padding-left:25px;
-}
-
-.section{
-    margin-bottom:25px;
+    padding:40px;
 }
 
 .project{
-    background:#f2f2f2;
-    padding:10px;
-    border-radius:6px;
-    margin-top:10px;
+    margin-bottom:30px;
 }
 
-.skills span{
-    background:#e3e3e3;
-    padding:6px 10px;
-    margin:4px;
-    display:inline-block;
-    border-radius:5px;
+h1{
+    color:#2c6ed5;
+}
+
+a{
+    text-decoration:none;
+    margin:5px;
 }
 
 </style>
@@ -81,73 +52,50 @@ body{
 
 <div class="container">
 
-<!-- LEFT COLUMN -->
-
 <div class="left">
 
-<img src="avatar.jpg" class="profile-img">
+<h1>Nhi Pham</h1>
 
-<div class="name">Yen Nhi Pham</div>
-
-<div class="links">
-
-<a href="resume.pdf">Resume</a>
-
-<a href="https://linkedin.com/in/your-link">LinkedIn</a>
-
-<a href="https://github.com/nnhiyen">GitHub</a>
-
-</div>
-
-</div>
-
-<!-- RIGHT COLUMN -->
-
-<div class="right">
-
-<div class="section">
-
-<h2>About Me</h2>
+<img src="avatar.jpg">
 
 <p>
-I am a 3rd-year Information Technology student at Sai Gon University, Viet Nam.
-I am interested in software development, data analysis and web development.
+<a href="#">Resume</a> |
+<a href="#">LinkedIn</a> |
+<a href="#">GitHub</a>
+</p>
+
+<p>
+Sinh viên CNTT. Quan tâm đến
+Machine Learning, Web Development
+và Data Analysis.
 </p>
 
 </div>
 
-<div class="section">
+<div class="right">
 
-<h2>Skills</h2>
-
-<div class="skills">
-
-<span>Java</span>
-<span>Python</span>
-<span>C++</span>
-<span>HTML</span>
-<span>CSS</span>
-<span>JavaScript</span>
-<span>MySQL</span>
-
-</div>
-
-</div>
-
-<div class="section">
-
-<h2>Projects</h2>
+<h1>Portfolio</h1>
 
 <div class="project">
-<b>Library Management System</b>
-<p>Java OOP project for managing books and users.</p>
+<h3>Quản Lý Tour Du Lịch</h3>
+
+<p>
+Ứng dụng Java quản lý tour, khách hàng và dịch vụ.
+</p>
+
+<a href="#">GitHub</a>
 </div>
+
 
 <div class="project">
-<b>Customer Management System</b>
-<p>Java Swing application connected with MySQL database.</p>
-</div>
+<h3>Graph Coloring Algorithm</h3>
 
+<p>
+Cài đặt thuật toán Welch-Powell và DSATUR
+để tô màu đồ thị.
+</p>
+
+<a href="#">GitHub</a>
 </div>
 
 </div>
